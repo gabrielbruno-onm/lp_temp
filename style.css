@@ -114,13 +114,14 @@ body #stars {
     overflow: hidden;
     position: absolute;
     left: 0;
+    z-index: -1;
 }
 
 #ellipse1 {
     float: left;
     margin: 0px;
     width: 40%;
-    height: 85%;
+    height: 100%;
     position: absolute;
     background-color: rgba(1, 7, 15, 0.80);
     filter: blur(70px);
