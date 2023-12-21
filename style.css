@@ -37,8 +37,6 @@
 body {
     background-color: #010104;
     color: white;
-    background-image: url(img/ellipse_13.png);
-    background-size: cover;
 }
 
 body .bg {
@@ -50,14 +48,14 @@ body .bg {
 }
 
 body #bg-ellipse {
-    background: url("img/ellipse_12.png");
+    background: url("img/ellipse_12.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
 }
 
 body #stars {
-    background: url("img/stars.png");
+    background: url("img/stars.webp");
     background-repeat: repeat;
 }
 
@@ -224,7 +222,7 @@ body #stars {
         height: 1800px;
     }
     body #bg-ellipse {
-        background: url(img/ellipse_12_mobile.png);
+        background: url(img/ellipse_12_mobile.webp);
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: center;
