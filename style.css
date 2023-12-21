@@ -1,79 +1,177 @@
+@import url("https://use.typekit.net/tiy4upm.css");
+@import url("https://onovomercado.com/wp-content/themes/o-novo-mercado/font/Gilroy/Gilroy.css");
+
+/*Vanguard*/
+
+@font-face {
+    font-family: 'Vanguard';
+    font-weight: lighter;
+    src: url('lp_temp/fonts/Vanguard/VanguardCF-Thin.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Vanguard';
+    font-weight: normal;
+    src: url('lp_temp/fonts/Vanguard/VanguardCF-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Vanguard';
+    font-weight: medium;
+    src: url('lp_temp/fonts/Vanguard/VanguardCF-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Vanguard';
+    font-weight: bold;
+    src: url('lp_temp/fonts/Vanguard/VanguardCF-Bold.otf') format("opentype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Termina';
-    font-weight: lighter;
-    src: url('fonts/Termina Test/TerminaTest-ExtraLight.otf') format("opentype");
-}
-
-@font-face {
-    font-family: 'Termina';
     font-weight: normal;
-    src: url('fonts/Termina Test/TerminaTest-Regular.otf') format("opentype");
 }
 
-@font-face {
-    font-family: 'Termina';
-    font-weight: medium;
-    src: url('fonts/Termina Test/TerminaTest-Medium.otf') format("opentype");
+body {
+    background-color: #010104;
+    color: white;
 }
 
-@font-face {
-    font-family: 'Termina';
-    font-weight: bold;
-    src: url('fonts/Termina Test/TerminaTest-Bold.otf') format("opentype");
+body .bg {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+body #bg-ellipse {
+    background: url("img/ellipse_12.png");
+    background-repeat: no-repeat;
+}
+
+body #stars {
+    background: url("img/stars.png");
 }
 
 .container {
-    margin: 100px auto 0px auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px auto 0px auto;
     width: 120vh;
     padding: 20px;
-    border: 3px solid black;
+    border: 3px solid white;
+    font-family: 'Termina';
 }
 
 #title {
+    font-weight: normal;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
-#title h1 strong {
-    font-weight: bolder;
+#title h2 span{
+    text-decoration: underline;
 }
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 1px solid white;
+    padding: 100px 0px;
+}
+
+#logo img {
+    height: 150px;
+}
+#logo p {
+    font-family: 'Termina';
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(45deg, #FFFFFF, #5390D8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #video {
     margin: auto 0px;    
     width: 100%;
     height: 550px;
     padding: 50px;
-    border: 1px solid black;
+    border: 1px solid white;
+    background-image: url('img/ellipse_13.png');
 }
-#additional-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    border: 1px solid black;
+
+#video iframe {
+    border-radius: 30px;
 }
-#additional-text h2 span{
-    text-decoration: underline;
-}
+
 #items {
+    margin: 87px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+.item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.item-wrapper a {
+    font-family: 'Termina';
+    font-weight: 700;
+    font-size: 14px;
+    color: #010104;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: -25px;
+    width: 25vh;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 0.538px solid #CEE4FF;
+    background: linear-gradient(264deg, #5390D8 -6.47%, #5390D8 -6.47%, #FFF 109.37%);
+}
 .item {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    margin: 0px 25px;
     text-align: center;
     width: 100%;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 0px 0px 20px 0px;
+    border-radius: 30px;
+    border: 0.678px solid #364960;
+    background: #0C1A2A;
+    background-size: contain;
+    box-shadow: 0px 0px 83.318px 0px #03010E;
+    overflow: hidden;
 }
+
+.item span {
+    font-family: 'Gilroy';
+    font-weight: 700;
+}
+
 .item h3 {
-    margin: 20px 0px;
+    font-family: 'Termina';
+    font-weight: 700;
     text-transform: uppercase;
+    padding: 15px;
+    margin: 0px 0px 20px 0px;
+    background: linear-gradient(88deg, #5390D8 3.85%, #070715 98.21%);
+}
+.item p {
+    margin: 0px 30px;
+    height: 120px;
 }
