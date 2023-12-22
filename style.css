@@ -73,8 +73,7 @@ body #stars {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-
+    margin: auto auto 30px auto;
 }
 #title h2 {
     text-align: center;
