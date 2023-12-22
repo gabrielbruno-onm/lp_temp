@@ -171,6 +171,11 @@ body #stars {
     border: 0.538px solid #CEE4FF;
     background: linear-gradient(264deg, #5390D8 -6.47%, #5390D8 -6.47%, #FFF 109.37%);
 }
+.item-wrapper a:hover {
+        box-shadow: #98c8ff 1px 1px 10px;
+        top: -30px;
+        transition: 0.2s;
+}
 .item {
     font-family: 'Gilroy';
     font-weight: normal;
